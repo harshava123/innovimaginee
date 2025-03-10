@@ -1,15 +1,15 @@
 import React from 'react';
 import { Linkedin, Instagram, Facebook, MapPin, Mail, Phone } from 'lucide-react';
- import bgimg from "../images/bgimg.png"
+import bgimg from "../images/bgimg.png"
+ 
 function Footer() {
   return (
-    <footer className="bg-gray-700  pt-16 pb-1.5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="w-full bg-black pt-16">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6">
-            <div className="w-16 h-16 ">
-              {/* Replace with your actual logo */}
+            <div className="w-16 h-16">
               <img src={bgimg} alt="Company Logo" className="w-full h-full object-cover" />
             </div>
             <p className="text-sm leading-relaxed text-white">
@@ -52,13 +52,13 @@ function Footer() {
             <h3 className="text-white font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-white transition-colors">About Us</a>
+                <a href="#services" className="text-white transition-colors">Services</a>
               </li>
               <li>
                 <a href="#portfolio" className="text-white transition-colors">Portfolio</a>
               </li>
               <li>
-                <a href="#careers" className="text-white transition-colors">Careers</a>
+                <a href="#ainnov" className="text-white transition-colors">AI Innovations</a>
               </li>
               <li>
                 <a href="#contact" className="text-white transition-colors">Contact</a>
@@ -92,11 +92,10 @@ function Footer() {
  
         {/* Bottom Bar */}
         <div className="mt-4 border-t border-gray-800">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
             <div className="text-sm text-white">
               © {new Date().getFullYear()} InnovImagine. All rights reserved.
             </div>
-           
           </div>
         </div>
       </div>
@@ -105,3 +104,4 @@ function Footer() {
 }
  
 export default Footer;
+ 

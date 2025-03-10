@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../images/bgimg.png";
 import { FaBars, FaTimes } from 'react-icons/fa';
-
+ 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+ 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+ 
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -17,10 +17,10 @@ const Header = () => {
     }
     setIsOpen(false); // Close menu on small screens
   };
-
+ 
   return (
     <header className="fixed top-0 left-0 right-0 bg-black shadow-md z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -28,7 +28,7 @@ const Header = () => {
               <img src={logo} alt="Logo" className="w-28 mr-2" />
             </Link>
           </div>
-
+ 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
             <button onClick={() => handleScroll('services')} className="text-white hover:text-gray-300">
@@ -44,7 +44,7 @@ const Header = () => {
               Connect
             </button>
           </nav>
-
+ 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -52,7 +52,7 @@ const Header = () => {
             </button>
           </div>
         </div>
-
+ 
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden absolute top-16 left-0 w-full bg-black shadow-md">
@@ -76,5 +76,7 @@ const Header = () => {
     </header>
   );
 };
-
+ 
 export default Header;
+ 
+ 

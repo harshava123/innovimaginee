@@ -1,6 +1,6 @@
 import React from 'react';
 import { Bot, LineChart, Image } from 'lucide-react';
-
+ 
 function Ainnov() {
   const aiSolutions = [
     {
@@ -19,9 +19,9 @@ function Ainnov() {
       icon: <Image className="w-6 h-6" />,
     },
   ];
-
+ 
   return (
-    <div className="min-h-screen bg-navy-900 px-4 py-20 relative overflow-hidden">
+    <div className="w-full bg-black py-15 relative overflow-hidden">
       {/* Background Animation Effect */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-500/20 to-purple-500/20" />
@@ -39,18 +39,18 @@ function Ainnov() {
           />
         ))}
       </div>
-
-      <div className="max-w-7xl mx-auto relative">
+ 
+      <div className="w-full max-w-[1920px] mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             AI Innovations
           </h2>
-          <p className=" text-lg text-white max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             Transformative AI solutions that push the boundaries of technology and innovation
           </p>
         </div>
-
+ 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {aiSolutions.map((solution, index) => (
@@ -72,7 +72,7 @@ function Ainnov() {
             </div>
           ))}
         </div>
-
+ 
         {/* CTA Button */}
         <div className="text-center">
           {/* <button className="text-white bg-gray-600 hover:bg-purple-700  font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -83,5 +83,6 @@ function Ainnov() {
     </div>
   );
 }
-
+ 
 export default Ainnov;
+ 
