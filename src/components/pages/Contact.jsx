@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React,{ useState } from 'react';
-=======
 import React, { useState, useRef } from 'react';
->>>>>>> 96ad48c (fin)
 import { Phone, Mail } from 'lucide-react';
 import emailjs from '@emailjs/browser';
  
@@ -12,7 +8,8 @@ function Contact() {
     fullName: '',
     email: '',
     service: '',
-    message: ''
+    message: '',
+    mobileNumber: '+91'
   });
   const [status, setStatus] = useState('idle'); // 'idle' | 'sending' | 'submitted'
  
@@ -21,23 +18,6 @@ function Contact() {
     setStatus('sending');
  
     try {
-<<<<<<< HEAD
-      const response = await fetch('http://localhost:5000/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
- 
-      const result = await response.json();
-      if (response.ok) {
-        setStatus('submitted');
-      } else {
-        alert('Error sending consultation request: ' + result.error);
-        setStatus('idle');
-      }
-=======
       await emailjs.sendForm(
         'service_z0sarzp',
         'template_z00i052',
@@ -53,7 +33,6 @@ function Contact() {
         message: '',
         mobileNumber: '+91'
       });
->>>>>>> 96ad48c (fin)
     } catch (error) {
       alert('Error sending request: ' + error.message);
       setStatus('idle');
@@ -97,10 +76,6 @@ function Contact() {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-        </div>
-        
-=======
           <div className="bg-white/60 p-8 rounded-2xl backdrop-blur-sm shadow-lg">
             <form ref={form} onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
@@ -195,7 +170,6 @@ function Contact() {
             </form>
           </div>
         </div>
->>>>>>> 96ad48c (fin)
       </div>
     </div>
   );
