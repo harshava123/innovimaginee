@@ -8,32 +8,38 @@ const projects = {
     {
       title: "SSR CHEM",
       description: "Web application",
-      technologies: ["React Js", "TailwindCSS", "JSX", "SQL", "Node Js", "Express Js"],
+      technologies: ["React Js", "TailwindCSS",],
       image: "https://ssrchem.vercel.app/static/media/logo.d21094c497be2866076e.png",
     },
     {
       title: "ProgMarketing",
       description: "Web application",
-      technologies: ["React Js", "TailwindCSS", "JSX", "SQL", "Node Js", "Express Js"],
+      technologies: ["React Js", "TailwindCSS", "Node Js", "Express Js"],
       image: "https://digitallearning.eletsonline.com/wp-content/uploads/2019/04/Digital-Marketing.jpg",
     },
     {
       title: "Match Your Fit",
       description: "Web application",
       technologies: ["Next.js", "TypeScript", "MongoDB"],
-      image: match,
+      image: "https://www.attitudetallyacademy.com/Blog/wp-content/uploads/2020/06/attitude.jpg",
     },
     {
       title: "InnovTuitions",
       description: "Web application",
       technologies: ["React", "Node js"],
-      image: tutions,
+      image: "https://www.chandigarhhelp.com/wp-content/uploads/2021/08/home-tuition-in-Panchkula.jpg",
     },
     {
       title: "Garuda Motors",
       description: "Web application",
-      technologies: ["React Js", "TailwindCSS", "JSX", "SQL", "Node Js", "Express Js"],
+      technologies: ["React Js", "Styled Components", "Node Js", "Express Js"],
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkqgi_YDRvWM-21vR3ewjuoZ3MN13achFhDQ&s",
+    },
+    {
+      title: "Design Studios",
+      description: "Web application",
+      technologies: ["React Js", "TailwindCSS",],
+      image: "https://windsorpatania.com/wp-content/uploads/2024/05/Sustainable-Interior-Materials.jpg",
     },
    
   ],
@@ -47,7 +53,7 @@ const projects = {
     {
       title: "Farm Cart",
       description: "Mobile application",
-      technologies: ["ReactNative", "firebase"],
+      technologies: ["ReactNative"],
       image: "https://media.istockphoto.com/id/870915532/photo/man-holding-crate-ob-fresh-vegetables.jpg?s=612x612&w=0&k=20&c=k2dXOI-wxUy7lX77Pm90vU6TJXmAAv5VtK60ZZHIyCA=",
     },
    
@@ -74,13 +80,13 @@ const projects = {
     {
       title: "Waste Management Classification",
       description: "Machine learning project",
-      technologies: ["Python", "Streamlit", "Dataset"],
+      technologies: ["Python", "Streamlit", "Dataset","Yolo"],
       image: "https://www.opensourceforu.com/wp-content/uploads/2023/07/detection-of-plastic-on-sea.jpg",
     },
     {
       title: "Mood Tracker",
       description: "Machine Learning",
-      technologies: ["ReactNative", "firebase"],
+      technologies: ["Python", "Streamlit","Machine Learning"],
       image: "https://pamojaeducation.com/wp-content/uploads/2020/06/Psych-blog_mood-swings.jpg",
     },
   ],
